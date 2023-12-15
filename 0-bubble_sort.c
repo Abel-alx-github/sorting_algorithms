@@ -1,5 +1,10 @@
 #include "sort.h"
-
+/**
+*bubble_sort - sorts input accending order using bubble sorting
+*@array: array of intiger
+*@size: size of array
+*Return: returns nothing
+*/
 
 void bubble_sort(int *array, size_t size)
 {
@@ -7,7 +12,7 @@ void bubble_sort(int *array, size_t size)
 	int tmp;
 
 	copy_size = size;
-	
+
 	if (!array || size == 0)
 		return;
 	for (j = 0; j < size; size--)
