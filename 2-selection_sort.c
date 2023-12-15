@@ -20,11 +20,16 @@ void selection_sort(int *array, size_t size)
 		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < tmp)
+			{
 				index = j;
+				tmp = array[j];
+			}
 		}
+		tmp = array[i];
 		array[i] = array[index];
 		array[index] = tmp;
-		print_array(array, size);
+		if (index != i)
+			print_array(array, size);
 	}
 
 
