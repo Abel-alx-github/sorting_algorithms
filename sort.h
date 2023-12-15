@@ -17,6 +17,7 @@ struct listint_s *prev;
 struct listint_s *next;
 } listint_t;
 
+void swap(listint_t *p, listint_t *f);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
