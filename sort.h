@@ -26,4 +26,9 @@ void quick_sort(int *array, size_t size);
 void swap_int(int *a, int *b);
 void sort(int *array, int lo, int hi, size_t size);
 int pivot(int *array, int lo, int hi, size_t size);
+
+void shell_sort(int *array, size_t size);
+int gap(size_t n);
+void shell_sort(int *array, size_t size);
+void swaping(int *a, int *b);
 #endif
